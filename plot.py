@@ -59,7 +59,7 @@ def show_histgram(title, data, bins):
     - : -
     """
     matplt.title(title)
-#    matplt.grid()
+    matplt.grid()
 
     matplt.hist(
                 data,  # ヒストグラムを作成するための生データの配列
@@ -80,3 +80,47 @@ def show_histgram(title, data, bins):
                 hold=None,  # 
                 data=None  # 
                 )
+
+    matplt.show()
+
+
+def show_2D_vector(title, X, Y, U, V, xlabel, ylabel, xmin, xmax, ymin, ymax):
+    """
+    2Dベクトル
+
+    Parameters
+    ----------
+    title : グラフタイトル
+    X : ベクトル始点X
+    Y : ベクトル始点Y
+    U : ベクトル）成分X
+    V : ベクトル）成分Y
+    xlabel : x軸ラベル
+    ylabel : y軸ラベル
+    xmin : x軸最小値
+    xmax : x軸最大値
+    ymin : y軸最小値
+    ymax : y軸最大値
+
+    Returns
+    -------
+    - : -
+    """
+    matplt.figure()
+
+    matplt.quiver(U, V, angles='xy', scale_units='xy', scale=1)
+
+    # グラフ描画
+    matplt.title(title)
+    matplt.xlabel(xlabel)
+    matplt.ylabel(ylabel)
+
+    if xmin != xmax:
+        plt.xlim(xmin, xmax)
+
+    if ymin != ymax:
+        plt.ylim(ymin, ymax)
+
+    matplt.grid()
+    matplt.draw()
+    matplt.show()
