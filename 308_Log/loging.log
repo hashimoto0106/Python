@@ -1,5 +1,0 @@
-2018-07-29 00:05:24,024,DEBUG,log.py,<module>,log,Logging,10948,9328,33,10_hashimoto
-2018-07-29 00:05:24,024,INFO,log.py,<module>,log,Logging,10948,9328,34,20_hashimoto
-2018-07-29 00:05:24,024,WARNING,log.py,<module>,log,Logging,10948,9328,35,30_hashimoto
-2018-07-29 00:05:24,025,ERROR,log.py,<module>,log,Logging,10948,9328,36,40_hashimoto
-2018-07-29 00:05:24,025,CRITICAL,log.py,<module>,log,Logging,10948,9328,37,50_hashimoto
