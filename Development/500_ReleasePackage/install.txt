@@ -1,0 +1,8 @@
+Å°win
+py -3  -m pip install vsearch-1.0.tar.gz
+
+
+
+Å°unix
+python3 -m pip install vsearch-1.0.tar.gz
+

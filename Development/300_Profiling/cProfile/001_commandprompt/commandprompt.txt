@@ -1,0 +1,24 @@
+
+F:\ProgramingLanguage\011_Python\30_Development\300_Profiling\cProfile>python -m cProfile -s cumulative commandprompt.py
+fib(35) = 9227465
+executed 10000000 loop
+Hello World!!
+         39860712 function calls (10000010 primitive calls) in 13.247 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   13.247   13.247 {built-in method builtins.exec}
+        1    0.000    0.000   13.247   13.247 commandprompt.py:6(<module>)
+        1    0.000    0.000   13.247   13.247 commandprompt.py:28(task)
+29860703/1   10.706    0.000   10.706   10.706 commandprompt.py:8(fib)
+        1    1.775    1.775    2.540    2.540 commandprompt.py:16(heavy_loop)
+ 10000000    0.765    0.000    0.765    0.000 commandprompt.py:22(calc)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+        1    0.000    0.000    0.000    0.000 commandprompt.py:25(hello_world)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+
+F:\ProgramingLanguage\011_Python\30_Development\300_Profiling\cProfile>pause
+ë±çsÇ∑ÇÈÇ…ÇÕâΩÇ©ÉLÅ[ÇâüÇµÇƒÇ≠ÇæÇ≥Ç¢ . . .

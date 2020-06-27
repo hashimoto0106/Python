@@ -1,0 +1,30 @@
+fib(35) = 9227465
+executed 10000000 loop
+Hello World!!
+         39860762 function calls (10000060 primitive calls) in 12.533 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   12.533   12.533 <string>:1(<module>)
+29860703/1   10.067    0.000   10.067   10.067 api.py:11(fib)
+        1    1.749    1.749    2.466    2.466 api.py:19(heavy_loop)
+ 10000000    0.717    0.000    0.717    0.000 api.py:25(calc)
+        1    0.000    0.000    0.000    0.000 api.py:28(hello_world)
+        1    0.000    0.000   12.533   12.533 api.py:31(task)
+        2    0.000    0.000    0.000    0.000 common.py:75(wake)
+        2    0.000    0.000    0.000    0.000 ioloop.py:928(add_callback)
+        6    0.000    0.000    0.000    0.000 iostream.py:227(_is_master_process)
+        6    0.000    0.000    0.000    0.000 iostream.py:240(_schedule_flush)
+        6    0.000    0.000    0.001    0.000 iostream.py:308(write)
+        2    0.000    0.000    0.000    0.000 stack_context.py:253(wrap)
+        2    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        1    0.000    0.000   12.533   12.533 {built-in method builtins.exec}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        3    0.000    0.000    0.001    0.000 {built-in method builtins.print}
+        6    0.000    0.000    0.000    0.000 {built-in method nt.getpid}
+        2    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        2    0.000    0.000    0.000    0.000 {method 'send' of '_socket.socket' objects}
+        6    0.000    0.000    0.000    0.000 {method 'write' of '_io.StringIO' objects}

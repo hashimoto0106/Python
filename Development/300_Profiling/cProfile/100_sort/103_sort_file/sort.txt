@@ -1,0 +1,28 @@
+
+F:\ProgramingLanguage\011_Python\30_Development\300_Profiling\cProfile\103_sort_file>python -m cProfile -s file sort.py
+fib(35) = 9227465
+executed 10000000 loop
+Hello World!!
+Traceback (most recent call last):
+  File "C:\Anaconda3\lib\runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "C:\Anaconda3\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "C:\Anaconda3\lib\cProfile.py", line 160, in <module>
+    main()
+  File "C:\Anaconda3\lib\cProfile.py", line 153, in main
+    runctx(code, globs, None, options.outfile, options.sort)
+  File "C:\Anaconda3\lib\cProfile.py", line 20, in runctx
+    filename, sort)
+  File "C:\Anaconda3\lib\profile.py", line 68, in runctx
+    self._show(prof, filename, sort)
+  File "C:\Anaconda3\lib\profile.py", line 74, in _show
+    prof.print_stats(sort)
+  File "C:\Anaconda3\lib\cProfile.py", line 42, in print_stats
+    pstats.Stats(self).strip_dirs().sort_stats(sort).print_stats()
+  File "C:\Anaconda3\lib\pstats.py", line 211, in sort_stats
+    sort_tuple = sort_tuple + sort_arg_defs[word][0]
+KeyError: 'file'
+
+F:\ProgramingLanguage\011_Python\30_Development\300_Profiling\cProfile\103_sort_file>pause
+‘±s‚·‚é‚É‚Í‰½‚©ƒL[‚ğ‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢ . . .

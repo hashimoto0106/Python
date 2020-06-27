@@ -1,0 +1,24 @@
+
+F:\ProgramingLanguage\011_Python\30_Development\300_Profiling\cProfile\107_sort_pcalls>python -m cProfile -s pcalls sort.py
+fib(35) = 9227465
+executed 10000000 loop
+Hello World!!
+         39860712 function calls (10000010 primitive calls) in 12.624 seconds
+
+   Ordered by: primitive call count
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+ 10000000    0.732    0.000    0.732    0.000 sort.py:22(calc)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+        1    0.000    0.000   12.624   12.624 sort.py:28(task)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    1.719    1.719    2.451    2.451 sort.py:16(heavy_loop)
+        1    0.000    0.000   12.624   12.624 {built-in method builtins.exec}
+29860703/1   10.172    0.000   10.172   10.172 sort.py:8(fib)
+        1    0.000    0.000    0.000    0.000 sort.py:25(hello_world)
+        1    0.000    0.000   12.624   12.624 sort.py:6(<module>)
+
+
+
+F:\ProgramingLanguage\011_Python\30_Development\300_Profiling\cProfile\107_sort_pcalls>pause
+ë±çsÇ∑ÇÈÇ…ÇÕâΩÇ©ÉLÅ[ÇâüÇµÇƒÇ≠ÇæÇ≥Ç¢ . . .

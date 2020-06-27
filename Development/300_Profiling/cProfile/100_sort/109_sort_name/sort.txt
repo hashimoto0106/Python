@@ -1,0 +1,24 @@
+
+F:\ProgramingLanguage\011_Python\30_Development\300_Profiling\cProfile\109_sort_name>python -m cProfile -s name sort.py
+fib(35) = 9227465
+executed 10000000 loop
+Hello World!!
+         39860712 function calls (10000010 primitive calls) in 12.719 seconds
+
+   Ordered by: function name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   12.719   12.719 {built-in method builtins.exec}
+        3    0.001    0.000    0.001    0.000 {built-in method builtins.print}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000   12.719   12.719 sort.py:6(<module>)
+ 10000000    0.717    0.000    0.717    0.000 sort.py:22(calc)
+29860703/1   10.292    0.000   10.292   10.292 sort.py:8(fib)
+        1    1.709    1.709    2.426    2.426 sort.py:16(heavy_loop)
+        1    0.000    0.000    0.000    0.000 sort.py:25(hello_world)
+        1    0.000    0.000   12.719   12.719 sort.py:28(task)
+
+
+
+F:\ProgramingLanguage\011_Python\30_Development\300_Profiling\cProfile\109_sort_name>pause
+ë±çsÇ∑ÇÈÇ…ÇÕâΩÇ©ÉLÅ[ÇâüÇµÇƒÇ≠ÇæÇ≥Ç¢ . . .
